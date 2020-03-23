@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				namespace="RyanPenfold.Repository.NHibernate.Tests.Unit"
+				assembly="RyanPenfold.Repository.NHibernate.Tests.Unit">
+	<class name="TestClass" table="TestClasses" lazy="false">
+		<id name="TestClassID" column="id" type="long">
+			<generator class="native" />
+		</id>
+		<property name="TestClassName">
+			<column name="TestClassName"
+				length="10000"
+				sql-type="varchar(MAX)"
+				not-null="false" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDEBB448-E3A5-4816-9216-EE7FB8DB2700}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RyanPenfold.Repository.NHibernate</RootNamespace>
+    <AssemblyName>RyanPenfold.Repository.NHibernate</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\packages\GeoAPI.1.7.4\lib\net45\GeoAPI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.1.14\lib\net45\NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.GeoTools, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.GeoTools.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.MsSqlSpatial, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.MsSqlSpatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.PostGis, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.PostGis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.ShapeFile, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.ShapeFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite.IO.ShapeFile.Extended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.IO.1.14.0.1\lib\net45\NetTopologySuite.IO.ShapeFile.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate.Spatial, Version=4.0.4.4000, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.Spatial.MsSql.4.0.4.4000\lib\net40-Client\NHibernate.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate.Spatial.MsSql, Version=4.0.4.4000, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.Spatial.MsSql.4.0.4.4000\lib\net40-Client\NHibernate.Spatial.MsSql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.1.14\lib\net45\PowerCollections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\BaseRepository.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\Configuration.cs">
+      <Link>Configuration\Configuration.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\IConfigurationSettings.cs">
+      <Link>Configuration\IConfigurationSettings.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\Json\IConfigurationSection.cs">
+      <Link>Configuration\Json\IConfigurationSection.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\Json\ConfigurationSection.cs">
+      <Link>Configuration\Json\ConfigurationSection.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\IConfiguration.cs">
+      <Link>Configuration\IConfiguration.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\Json\IMapping.cs">
+      <Link>Configuration\Json\IMapping.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\Json\Mapping.cs">
+      <Link>Configuration\Json\Mapping.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\MappingConfigurationElement.cs">
+      <Link>Configuration\MappingConfigurationElement.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\MappingConfigurationElementCollection.cs">
+      <Link>Configuration\MappingConfigurationElementCollection.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\Configuration\MappingsConfigurationSection.cs">
+      <Link>Configuration\MappingsConfigurationSection.cs</Link>
+	</Compile>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\ISessionFactory.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\BaseClassMap.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\MappingType.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate\SessionFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\net45\RyanPenfold.Repository.NHibernate\app.config" />
+    <None Include="..\..\net45\RyanPenfold.Repository.NHibernate\packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\business-base-infrastructure\net46\RyanPenfold.BusinessBase.Infrastructure\RyanPenfold.BusinessBase.Infrastructure.csproj">
+      <Project>{411ed961-e753-47dc-b950-ce53ea93da2f}</Project>
+      <Name>RyanPenfold.BusinessBase.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ioc-container\net46\RyanPenfold.IocContainer\RyanPenfold.IocContainer.csproj">
+      <Project>{ee5b1ca8-4a1e-4a62-be0d-d37dc026896d}</Project>
+      <Name>RyanPenfold.IocContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\utilities\net46\RyanPenfold.Utilities.Data\RyanPenfold.Utilities.Data.csproj">
+      <Project>{b3388100-8b67-4ff9-bba0-d89c0419503e}</Project>
+      <Name>RyanPenfold.Utilities.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

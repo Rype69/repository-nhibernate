@@ -1,0 +1,150 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7490545F-E2FD-4416-A4D8-3D0CC05D5C16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Repository.NHibernate.Tests.Integration", "RyanPenfold.Repository.NHibernate.Tests.Integration\RyanPenfold.Repository.NHibernate.Tests.Integration.csproj", "{594B7E3D-2494-4F58-8627-C15E07057A4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Repository.NHibernate.Tests.Unit", "RyanPenfold.Repository.NHibernate.Tests.Unit\RyanPenfold.Repository.NHibernate.Tests.Unit.csproj", "{AD41501F-FD63-4C20-A1A0-C9EA26D13EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanPenfold.Repository.NHibernate", "RyanPenfold.Repository.NHibernate\RyanPenfold.Repository.NHibernate.csproj", "{75C8B5A9-981F-4F21-A8C4-0518BA780C40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Configuration", "..\..\configuration\netstandard2.1\RyanPenfold.Configuration\RyanPenfold.Configuration.csproj", "{F8B00779-2244-4856-A7FE-78FD32A312D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Configuration.Tests.Unit", "..\..\configuration\netcoreapp3.1\RyanPenfold.Configuration.Tests.Unit\RyanPenfold.Configuration.Tests.Unit.csproj", "{A7CF2E08-09BA-44BC-ABC6-3004C0ECDA57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.IocContainer.Tests.Unit", "..\..\ioc-container\netcoreapp3.1\RyanPenfold.IocContainer.Tests.Unit\RyanPenfold.IocContainer.Tests.Unit.csproj", "{A378B8D4-5CF8-49FE-9663-281B3760CED7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.IocContainer", "..\..\ioc-container\netstandard2.1\RyanPenfold.IocContainer\RyanPenfold.IocContainer.csproj", "{AAB9DB81-2710-4901-A801-12C39A9BE857}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Utilities.Data", "..\..\utilities\netcoreapp3.1\RyanPenfold.Utilities.Data\RyanPenfold.Utilities.Data.csproj", "{16507E0E-003D-458E-AAD7-28D97450D195}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Utilities.Data.Tests.Integration", "..\..\utilities\netcoreapp3.1\RyanPenfold.Utilities.Data.Tests.Integration\RyanPenfold.Utilities.Data.Tests.Integration.csproj", "{479947D7-C585-493F-B970-D59AEA649FE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.Utilities.Data.Tests.Unit", "..\..\utilities\netcoreapp3.1\RyanPenfold.Utilities.Data.Tests.Unit\RyanPenfold.Utilities.Data.Tests.Unit.csproj", "{0F7CA349-239C-4C37-ADBB-018C44E2FE32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.BusinessBase.Infrastructure", "..\..\business-base-infrastructure\netstandard2.1\RyanPenfold.BusinessBase.Infrastructure\RyanPenfold.BusinessBase.Infrastructure.csproj", "{ACD755C7-DDF5-4373-8E7D-B52E56704413}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RyanPenfold.BusinessBase.Infrastructure.Tests.Unit", "..\..\business-base-infrastructure\netcoreapp3.1\RyanPenfold.BusinessBase.Infrastructure.Tests.Unit\RyanPenfold.BusinessBase.Infrastructure.Tests.Unit.csproj", "{5062D8D4-D525-43DA-AC8D-5C9657954F6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{594B7E3D-2494-4F58-8627-C15E07057A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594B7E3D-2494-4F58-8627-C15E07057A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594B7E3D-2494-4F58-8627-C15E07057A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594B7E3D-2494-4F58-8627-C15E07057A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD41501F-FD63-4C20-A1A0-C9EA26D13EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD41501F-FD63-4C20-A1A0-C9EA26D13EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD41501F-FD63-4C20-A1A0-C9EA26D13EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD41501F-FD63-4C20-A1A0-C9EA26D13EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C8B5A9-981F-4F21-A8C4-0518BA780C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C8B5A9-981F-4F21-A8C4-0518BA780C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C8B5A9-981F-4F21-A8C4-0518BA780C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C8B5A9-981F-4F21-A8C4-0518BA780C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B00779-2244-4856-A7FE-78FD32A312D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B00779-2244-4856-A7FE-78FD32A312D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B00779-2244-4856-A7FE-78FD32A312D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B00779-2244-4856-A7FE-78FD32A312D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CF2E08-09BA-44BC-ABC6-3004C0ECDA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CF2E08-09BA-44BC-ABC6-3004C0ECDA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CF2E08-09BA-44BC-ABC6-3004C0ECDA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CF2E08-09BA-44BC-ABC6-3004C0ECDA57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A378B8D4-5CF8-49FE-9663-281B3760CED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A378B8D4-5CF8-49FE-9663-281B3760CED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A378B8D4-5CF8-49FE-9663-281B3760CED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A378B8D4-5CF8-49FE-9663-281B3760CED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB9DB81-2710-4901-A801-12C39A9BE857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB9DB81-2710-4901-A801-12C39A9BE857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB9DB81-2710-4901-A801-12C39A9BE857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB9DB81-2710-4901-A801-12C39A9BE857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16507E0E-003D-458E-AAD7-28D97450D195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16507E0E-003D-458E-AAD7-28D97450D195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16507E0E-003D-458E-AAD7-28D97450D195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16507E0E-003D-458E-AAD7-28D97450D195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479947D7-C585-493F-B970-D59AEA649FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479947D7-C585-493F-B970-D59AEA649FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479947D7-C585-493F-B970-D59AEA649FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479947D7-C585-493F-B970-D59AEA649FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7CA349-239C-4C37-ADBB-018C44E2FE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7CA349-239C-4C37-ADBB-018C44E2FE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7CA349-239C-4C37-ADBB-018C44E2FE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7CA349-239C-4C37-ADBB-018C44E2FE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD755C7-DDF5-4373-8E7D-B52E56704413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD755C7-DDF5-4373-8E7D-B52E56704413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD755C7-DDF5-4373-8E7D-B52E56704413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD755C7-DDF5-4373-8E7D-B52E56704413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5062D8D4-D525-43DA-AC8D-5C9657954F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5062D8D4-D525-43DA-AC8D-5C9657954F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5062D8D4-D525-43DA-AC8D-5C9657954F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5062D8D4-D525-43DA-AC8D-5C9657954F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{594B7E3D-2494-4F58-8627-C15E07057A4C} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+		{AD41501F-FD63-4C20-A1A0-C9EA26D13EC2} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+		{A7CF2E08-09BA-44BC-ABC6-3004C0ECDA57} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+		{A378B8D4-5CF8-49FE-9663-281B3760CED7} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+		{479947D7-C585-493F-B970-D59AEA649FE5} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+		{0F7CA349-239C-4C37-ADBB-018C44E2FE32} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+		{5062D8D4-D525-43DA-AC8D-5C9657954F6C} = {7490545F-E2FD-4416-A4D8-3D0CC05D5C16}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD019429-4669-4218-A7A4-32B88A62E7D2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ryanpenfold.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RyanPenfold.Repository.NHibernate.Tests.Integration\\RyanPenfold.Repository.NHibernate.Tests.Integration.csproj
+		SccProjectTopLevelParentUniqueName1 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName1 = RyanPenfold.Repository.NHibernate.Tests.Integration
+		SccLocalPath1 = RyanPenfold.Repository.NHibernate.Tests.Integration
+		SccProjectUniqueName2 = RyanPenfold.Repository.NHibernate.Tests.Unit\\RyanPenfold.Repository.NHibernate.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName2 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName2 = RyanPenfold.Repository.NHibernate.Tests.Unit
+		SccLocalPath2 = RyanPenfold.Repository.NHibernate.Tests.Unit
+		SccProjectUniqueName3 = RyanPenfold.Repository.NHibernate\\RyanPenfold.Repository.NHibernate.csproj
+		SccProjectName3 = RyanPenfold.Repository.NHibernate
+		SccLocalPath3 = RyanPenfold.Repository.NHibernate
+		SccProjectUniqueName4 = ..\\..\\configuration\\netstandard2.1\\RyanPenfold.Configuration\\RyanPenfold.Configuration.csproj
+		SccProjectName4 = ../../RyanPenfold.Configuration/netstandard2.1/RyanPenfold.Configuration
+		SccLocalPath4 = ..\\..\\configuration\\netstandard2.1\\RyanPenfold.Configuration
+		SccProjectUniqueName5 = ..\\..\\configuration\\netcoreapp3.1\\RyanPenfold.Configuration.Tests.Unit\\RyanPenfold.Configuration.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName5 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName5 = ../../RyanPenfold.Configuration/netcoreapp3.1/RyanPenfold.Configuration.Tests.Unit
+		SccLocalPath5 = ..\\..\\configuration\\netcoreapp3.1\\RyanPenfold.Configuration.Tests.Unit
+		SccProjectUniqueName6 = ..\\..\\ioc-container\\netcoreapp3.1\\RyanPenfold.IocContainer.Tests.Unit\\RyanPenfold.IocContainer.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName6 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName6 = ../../RyanPenfold.IocContainer/netcoreapp3.1/RyanPenfold.IocContainer.Tests.Unit
+		SccLocalPath6 = ..\\..\\ioc-container\\netcoreapp3.1\\RyanPenfold.IocContainer.Tests.Unit
+		SccProjectUniqueName7 = ..\\..\\ioc-container\\netstandard2.1\\RyanPenfold.IocContainer\\RyanPenfold.IocContainer.csproj
+		SccProjectName7 = ../../RyanPenfold.IocContainer/netstandard2.1/RyanPenfold.IocContainer
+		SccLocalPath7 = ..\\..\\ioc-container\\netstandard2.1\\RyanPenfold.IocContainer
+		SccProjectUniqueName8 = ..\\..\\utilities\\netcoreapp3.1\\RyanPenfold.Utilities.Data\\RyanPenfold.Utilities.Data.csproj
+		SccProjectName8 = ../../RyanPenfold.Utilities/netcoreapp3.1/RyanPenfold.Utilities.Data
+		SccLocalPath8 = ..\\..\\utilities\\netcoreapp3.1\\RyanPenfold.Utilities.Data
+		SccProjectUniqueName9 = ..\\..\\utilities\\netcoreapp3.1\\RyanPenfold.Utilities.Data.Tests.Integration\\RyanPenfold.Utilities.Data.Tests.Integration.csproj
+		SccProjectTopLevelParentUniqueName9 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName9 = ../../RyanPenfold.Utilities/netcoreapp3.1/RyanPenfold.Utilities.Data.Tests.Integration
+		SccLocalPath9 = ..\\..\\utilities\\netcoreapp3.1\\RyanPenfold.Utilities.Data.Tests.Integration
+		SccProjectUniqueName10 = ..\\..\\utilities\\netcoreapp3.1\\RyanPenfold.Utilities.Data.Tests.Unit\\RyanPenfold.Utilities.Data.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName10 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName10 = ../../RyanPenfold.Utilities/netcoreapp3.1/RyanPenfold.Utilities.Data.Tests.Unit
+		SccLocalPath10 = ..\\..\\utilities\\netcoreapp3.1\\RyanPenfold.Utilities.Data.Tests.Unit
+		SccProjectUniqueName11 = ..\\..\\business-base-infrastructure\\netstandard2.1\\RyanPenfold.BusinessBase.Infrastructure\\RyanPenfold.BusinessBase.Infrastructure.csproj
+		SccProjectName11 = ../../RyanPenfold.BusinessBase.Infrastructure/netstandard2.1/RyanPenfold.BusinessBase.Infrastructure
+		SccLocalPath11 = ..\\..\\business-base-infrastructure\\netstandard2.1\\RyanPenfold.BusinessBase.Infrastructure
+		SccProjectUniqueName12 = ..\\..\\business-base-infrastructure\\netcoreapp3.1\\RyanPenfold.BusinessBase.Infrastructure.Tests.Unit\\RyanPenfold.BusinessBase.Infrastructure.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName12 = RyanPenfold.Repository.NHibernate.sln
+		SccProjectName12 = ../../RyanPenfold.BusinessBase.Infrastructure/netcoreapp3.1/RyanPenfold.BusinessBase.Infrastructure.Tests.Unit
+		SccLocalPath12 = ..\\..\\business-base-infrastructure\\netcoreapp3.1\\RyanPenfold.BusinessBase.Infrastructure.Tests.Unit
+	EndGlobalSection
+EndGlobal

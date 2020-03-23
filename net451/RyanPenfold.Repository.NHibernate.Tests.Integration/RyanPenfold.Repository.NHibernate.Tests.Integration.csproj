@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8710D70-26C4-4641-92A8-22F940FB04A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RyanPenfold.Repository.NHibernate.Tests.Integration</RootNamespace>
+    <AssemblyName>RyanPenfold.Repository.NHibernate.Tests.Integration</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\BaseRepositoryTests.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\ContainsGuid.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\DataAccess.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\EmailTemplate.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\ContainsGuidRepository.cs" />
+    <Compile Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\EmailTemplateRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\app.config" />
+    <None Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\EmailTemplates.hbm.xml" />
+    <EmbeddedResource Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\ContainsGuid.hbm.xml" />
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_CONTAINSGUID.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_CONTAINSGUID.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_EMAILTEMPLATE.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_EMAILTEMPLATE.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_ESCALATE_TICKETS.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_ESCALATE_TICKETS.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_ESCALATION_RULES.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_ESCALATION_RULES.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_GETUSERNAME.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_GETUSERNAME.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_SELECT_TICKETRECIPIENTS.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_SELECT_TICKETRECIPIENTS.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_TICKET.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_TICKET.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_TICKETSUMMARY.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_TICKETSUMMARY.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\CREATE_TICKET_RECIPIENT.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\CREATE_TICKET_RECIPIENT.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_CONTAINSGUID.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_CONTAINSGUID.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_EMAILTEMPLATE.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_EMAILTEMPLATE.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_ESCALATE_TICKETS.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_ESCALATE_TICKETS.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_ESCALATION_RULES.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_ESCALATION_RULES.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_GETUSERNAME.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_GETUSERNAME.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_SELECT_TICKETRECIPIENTS.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_SELECT_TICKETRECIPIENTS.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_TICKET.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_TICKET.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_TICKETSUMMARY.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_TICKETSUMMARY.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\DROP_TICKET_RECIPIENT.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\DROP_TICKET_RECIPIENT.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\INSERT_ESCALATION_RULES.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\INSERT_ESCALATION_RULES.sql</Link>
+    </Content>
+    <Content Include="..\..\net45\RyanPenfold.Repository.NHibernate.Tests.Integration\SQL\INSERT_TICKETS.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SQL\INSERT_TICKETS.sql</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\business-base-infrastructure\net451\RyanPenfold.BusinessBase.Infrastructure\RyanPenfold.BusinessBase.Infrastructure.csproj">
+      <Project>{411ed961-e753-47dc-b950-ce53ea93da2f}</Project>
+      <Name>RyanPenfold.BusinessBase.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\utilities\net451\RyanPenfold.Utilities\RyanPenfold.Utilities.csproj">
+      <Project>{6b248f86-cc97-49f6-96f2-9200707544a4}</Project>
+      <Name>RyanPenfold.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RyanPenfold.Repository.NHibernate\RyanPenfold.Repository.NHibernate.csproj">
+      <Project>{edebb448-e3a5-4816-9216-ee7fb8db2700}</Project>
+      <Name>RyanPenfold.Repository.NHibernate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
